@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Colors */
+* {
+    color: #152237;
+    margin: 0;
+}
+
+.content__recent,
+.content__formations-value,
+.content__formations-button,
+.content__recent-title,
+.content__recent-subtitle,
+.content__recent-info,
+.content__recent-text,
+.footer__legalties-title,
+.footer__legalties-object,
+.footer__coordinates-title,
+.footer__coordinates-object {
+    color: #ffffff;
+}
+
+.content__witness-text {
+    color: #000000cc;
+}
+
+.hero__subtitle {
+    color: #000000;
+}
+
+header,
+footer,
+.content__recent,
+.content__formations-price,
+.content__formations-button,
+.content__about-block,
+.footer__contact-input,
+.footer__contact-textarea {
+    background-color: #152237;
+}
+
+.footer__contact,
+.content__recent-price {
+    background-color: #ffffff;
+}
+
+.content_benefits {
+    background-color: #f5f5f5;
+}
+
+.content__create,
+.footer__contact-submit {
+    background-color: #44dd8a;
+}
+
+/*Header*/
+header {
+    height: 5rem;
+}
+
+.header__image {
+    width: 5.25rem;
+    height: 1.9375rem;
+    margin: 1.5313rem;
+}
+
+.header__nav {
+    display: none;
+}
+/*Hero*/
+.hero {
+    background: linear-gradient(
+            94.01deg,
+            rgba(68, 221, 138, 0.8) 3.11%,
+            rgba(21, 183, 226, 0.8) 98.45%
+        ),
+        url(/assets/images/bg-header-mobile.png);
+
+    height: 22.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Content*/
+/*Footer*/
+/**/
