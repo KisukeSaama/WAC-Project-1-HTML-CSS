@@ -1,9 +1,27 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
     margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    max-width: 1440px; /* ou width: 1440px pour test */
+    margin: 0 auto;
 }
 
 /* Colors */
@@ -13,6 +31,7 @@ body {
 }
 
 .content__recent,
+.content__formations-discount,
 .content__formations-value,
 .content__formations-button,
 .content__recent-title,
@@ -50,7 +69,7 @@ footer,
     background-color: #ffffff;
 }
 
-.content_benefits {
+.content_benefits .content__about {
     background-color: #f5f5f5;
 }
 
@@ -62,6 +81,8 @@ footer,
 /*Header*/
 header {
     height: 5rem;
+    background: url(/assets/icons/Icon\ button\ togglable\ -\ standard.svg)
+        cover no-repeat;
 }
 
 .header__image {
@@ -73,6 +94,7 @@ header {
 .header__nav {
     display: none;
 }
+
 /*Hero*/
 .hero {
     background: linear-gradient(
@@ -81,13 +103,135 @@ header {
             rgba(21, 183, 226, 0.8) 98.45%
         ),
         url(/assets/images/bg-header-mobile.png);
-
+    background-position: bottom;
     height: 22.625rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+.hero__title {
+    height: 7.3125rem;
+    width: 22.5rem;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.hero__subtitle {
+    height: 4.5rem;
+    width: 22.5rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero__button {
+    height: 2.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 2.0781rem;
+    border: none;
+}
+
 /*Content*/
+.content__formations,
+.content__recent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__formations-block,
+.content__recent-block {
+    margin: 2.5rem 2.8125rem 0.688rem;
+}
+
+.content__formations-title,
+.content__recent-title {
+    font-size: 30px;
+    font-weight: 800;
+    width: 20.9375rem;
+    height: 5rem;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.content__formations-price,
+.content__recent-price {
+    border-radius: 93px;
+    width: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    margin: -1.375rem 0 0 10.875rem;
+}
+
+.content__formations-discount,
+.content__recent-discount {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    height: 1.9737rem;
+    margin-right: 6px;
+}
+
+.content__formations-value,
+.content__recent-value {
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: line-through;
+    line-height: 0.4375rem;
+    display: flex;
+    align-items: center;
+}
+
+.content__formations-subtitle,
+.content__recent-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    height: 1.75rem;
+    width: 18.9375rem;
+    margin: 1.3125rem 0 0 0.875rem;
+}
+
+.content__formations-info,
+.content__recent-info {
+    font-size: 16px;
+    font-weight: 400;
+    width: 18.3125rem;
+    height: 1.5625rem;
+    margin: 0.6875rem 0 0 0.875rem;
+}
+
+.content__formations-rating,
+.content__recent-rating {
+    margin: 0.5rem 0 0 0.875rem;
+}
+
+.content__formations-text,
+.content__recent-text {
+    font-size: 16px;
+    font-weight: 400;
+    width: 17.5rem;
+    height: 2.25rem;
+    margin: 0.4875rem 0 0 0.875rem;
+}
+
+.content__formations-button,
+.content__recent-button {
+    width: 14.0625rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 1.875rem 0 2.8125rem 0;
+    border: none;
+}
 /*Footer*/
 /**/
