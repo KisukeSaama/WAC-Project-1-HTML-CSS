@@ -34,10 +34,10 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-object">
-                        <a href="">Les formations</a>
+                        <a href="#" class="header__nav-formation">Les formations</a>
                     </li>
                     <li class="header__nav-object">
-                        <div class="header__nav-bar">
+                        <form action="#" method="GET" class="header__nav-bar">
                             <input
                                 type="search"
                                 name="search"
@@ -45,18 +45,20 @@
                                 class="header__nav-input"
                                 placeholder="Rechercher"
                             />
-                            <img
+                            <button class="header__nav-search-button">
+                                <img
                                 src="assets/icons/search.svg"
                                 class="header__nav-image"
                                 alt="Search logo"
                             />
-                        </div>
+                            </button>
+                        </form>
                     </li>
                     <li class="header__nav-object">
+                        <div>
                         <button class="header__nav-button">Connexion</button>
-                    </li>
-                    <li class="header__nav-object">
                         <button class="header__nav-button">Inscription</button>
+                        </div>
                     </li>
                 </ul>
             </nav>
