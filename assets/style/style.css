@@ -680,25 +680,30 @@ header {
         margin-top: 1.875rem;
         display: flex;
         align-self: flex-start;
-        padding-left: 11vw;
+        padding-left: 5.5vw;
     }
 
     .content__formations-ads,
     .content__recent-ads {
         display: flex;
         flex-direction: row;
-        align-self: flex-start;
-        padding-left: 11vw;
+        align-self: center;
+        margin-left: 5rem;
     }
 
     .content__formations-block,
     .content__recent-block {
         margin-right: 3.042vw;
+        width: 340px;
     }
 
     .content__formations-button,
     .content__recent-button {
+        display: flex;
+        flex-direction: row;
         align-self: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .content__witness {
@@ -718,13 +723,19 @@ header {
         display: flex;
         flex-direction: row;
         margin-bottom: 8.1875rem;
+        margin-left: 6.25rem;
     }
 
     .content__witness-block {
         display: flex;
         align-items: flex-start;
-        width: 43.0625rem;
+        width: 45.0625rem;
         margin-right: 1.5rem;
+    }
+
+    .content__witness-block:last-child {
+        width: 42.0625rem;
+        margin-right: 7rem;
     }
 
     .content__witness-text {
@@ -749,10 +760,14 @@ header {
         width: 100%;
         display: flex;
         align-self: flex-start;
-        margin-top: 4.9375rem;
+        margin-top: 1.5625rem;
+        margin-bottom: 2.6875rem;
+        font-size: 40px;
+        height: 2.9375rem;
     }
     .content__benefits-list {
         width: 100%;
+        font-size: 24px;
     }
 
     .content__benefits-image {
@@ -762,6 +777,8 @@ header {
         object-fit: cover;
         margin-top: 4.75rem;
         margin-bottom: 5.8125rem;
+        margin-left: 4.4375rem;
+        margin-right: 0;
     }
 
     .content__about {
@@ -769,6 +786,7 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        height: 46.25rem;
     }
     .content__about-title {
         width: 100%;
@@ -778,7 +796,7 @@ header {
 
     .content__about-content {
         display: flex;
-        width: 45.4375rem;
+        width: 44.4375rem;
         height: 740px;
         flex-direction: column;
         justify-content: center;
@@ -793,6 +811,7 @@ header {
     .content__about-block {
         width: 50%;
         align-items: center;
+        height: -webkit-fill-available;
     }
 
     .content__about-image {
