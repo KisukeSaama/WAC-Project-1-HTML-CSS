@@ -84,12 +84,19 @@ footer,
 /*Header*/
 header {
     height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header__image {
     width: 5.25rem;
     height: 1.9375rem;
     margin: 1.5313rem;
+}
+
+.header__burger-icon {
+    margin: 0.75rem 1.125rem;
 }
 
 .header__nav {
@@ -151,7 +158,7 @@ header {
 
 .content__formations-block,
 .content__recent-block {
-    margin: 2.5rem 2.8125rem 0.688rem;
+    margin: 2.5rem 0 0.688rem 0;
 }
 
 .content__formations-title,
@@ -406,7 +413,7 @@ header {
     flex-direction: column;
     justify-content: center;
     width: 24.5625rem;
-    height: 23.125rem;
+    height: -webkit-fill-available;
 }
 
 .content__about-image {
@@ -555,8 +562,14 @@ header {
         width: 100%;
     }
 
+    .header__burger-icon {
+        display: none;
+    }
+
     .header__nav-formation {
         text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .header__nav-list {
@@ -572,6 +585,8 @@ header {
     .header__nav-input {
         background-color: transparent;
         border: 0;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .header__nav-bar {
@@ -597,8 +612,22 @@ header {
         width: 100%;
     }
 
+    .header__nav-button {
+        font-size: 15px;
+        font-weight: 500;
+        width: 8.125rem;
+        height: 2.5rem;
+        border-radius: 6px;
+        border: none;
+    }
+
+    .header__nav-button:last-child {
+        background: linear-gradient(95.98deg, #44dd8a 8.7%, #15b7e2 100%);
+        margin-left: 0.99vw;
+    }
+
     .hero {
-        background-position: 50% 67%;
+        background-position: 50% 69%;
         background-repeat: no-repeat;
         background-size: cover;
         height: 22.625rem;
@@ -608,19 +637,20 @@ header {
         align-items: center;
         text-align: center;
         text-transform: uppercase;
+        height: 28.1875rem;
     }
 
     .hero__title {
-        height: 59px;
-        width: 1021px;
+        width: 65.8125rem;
+        height: 3.6875rem;
         font-weight: 800;
-        font-size: 32px;
-        margin: 2.8125rem 0 1.6875rem;
+        font-size: 48px;
+        margin: 2.8125rem 0 0.5rem;
     }
 
     .hero__subtitle {
-        height: 4.5rem;
-        width: 22.5rem;
+        height: 1.5rem;
+        width: 46.4375rem;
         font-weight: 500;
         font-size: 20px;
     }
@@ -631,16 +661,145 @@ header {
         border-radius: 6px;
         font-weight: 500;
         font-size: 15px;
-        margin: 2.0781rem 0 34px;
+        margin: 1.375rem 0 0;
         border: none;
     }
 
     .content__formations,
-    .content__recent,
-    .content__witness,
-    .content__benefits,
+    .content__recent {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .content__formations-title,
+    .content__recent-title {
+        font-size: 36px;
+        width: 31.375rem;
+        height: 4.5rem;
+        text-align: center;
+        margin-top: 1.875rem;
+        display: flex;
+        align-self: flex-start;
+        padding-left: 11vw;
+    }
+
+    .content__formations-ads,
+    .content__recent-ads {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        padding-left: 11vw;
+    }
+
+    .content__formations-block,
+    .content__recent-block {
+        margin-right: 3.042vw;
+    }
+
+    .content__formations-button,
+    .content__recent-button {
+        align-self: center;
+    }
+
+    .content__witness {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__witness-title {
+        font-size: 40px;
+        margin-top: 3.625rem;
+        margin-bottom: 4.125rem;
+    }
+
+    .content__witness-group {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8.1875rem;
+    }
+
+    .content__witness-block {
+        display: flex;
+        align-items: flex-start;
+        width: 43.0625rem;
+        margin-right: 1.5rem;
+    }
+
+    .content__witness-text {
+        width: 100%;
+    }
+
+    .content__benefits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .content__benefits-group {
+        display: flex;
+        flex-direction: column;
+        width: 42.875rem;
+        margin-bottom: 8.1875rem;
+    }
+
+    .content__benefits-title {
+        width: 100%;
+        display: flex;
+        align-self: flex-start;
+        margin-top: 4.9375rem;
+    }
+    .content__benefits-list {
+        width: 100%;
+    }
+
+    .content__benefits-image {
+        display: flex;
+        width: 45.4375rem;
+        height: 29.5rem;
+        object-fit: cover;
+        margin-top: 4.75rem;
+        margin-bottom: 5.8125rem;
+    }
+
+    .content__about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__about-title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .content__about-content {
+        display: flex;
+        width: 45.4375rem;
+        height: 740px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content__about-group {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content__about-block {
+        width: 50%;
+        align-items: center;
+    }
+
+    .content__about-image {
+        width: 26.875rem;
+    }
+
     .content__create,
-    .content__about,
     .footer__legalties,
     .footer__coordinates {
         display: flex;
