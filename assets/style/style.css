@@ -990,6 +990,7 @@ header {
         width: 100%;
         height: 0.125rem;
         background: #44dd8a;
+        border: none;
     }
 
     .footer__copyright {
