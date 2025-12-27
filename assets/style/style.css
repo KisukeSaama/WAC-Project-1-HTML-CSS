@@ -7,8 +7,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    margin: 0 auto;
-    width: 100dvw;
+    width: 100%;
 }
 
 h1,
@@ -36,7 +35,7 @@ p {
 .content__recent-subtitle,
 .content__recent-info,
 .content__recent-text,
-::-webkit-input-placeholder,
+::placeholder,
 .footer__legalties-title,
 .footer__legalties-object,
 .footer__coordinates-title,
@@ -124,7 +123,7 @@ header {
 }
 
 .hero__title {
-    height: 7.3125rem;
+    height: auto;
     width: 22.5rem;
     font-weight: 800;
     font-size: 32px;
@@ -132,7 +131,7 @@ header {
 }
 
 .hero__subtitle {
-    height: 4.5rem;
+    height: auto;
     width: 22.5rem;
     font-weight: 500;
     font-size: 20px;
@@ -159,6 +158,7 @@ header {
 .content__formations-bloc,
 .content__recent-bloc {
     margin: 2.5rem 0 0.688rem 0;
+    position: relative;
 }
 
 .content__formations-title,
@@ -166,7 +166,7 @@ header {
     font-size: 30px;
     font-weight: 800;
     width: 20.9375rem;
-    height: 5rem;
+    height: auto;
     text-align: center;
     margin-top: 1.25rem;
 }
@@ -207,7 +207,7 @@ header {
 .content__recent-subtitle {
     font-size: 24px;
     font-weight: 700;
-    height: 1.75rem;
+    height: auto;
     width: 18.9375rem;
     margin: 1.3125rem 0 0 0.875rem;
 }
@@ -217,7 +217,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     width: 18.3125rem;
-    height: 1.5625rem;
+    height: auto;
     margin: 0.6875rem 0 0 0.875rem;
 }
 
@@ -231,7 +231,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     width: 17.5rem;
-    height: 2.25rem;
+    height: auto;
     margin: 0.4875rem 0 0 0.875rem;
 }
 
@@ -301,7 +301,7 @@ header {
     text-align: center;
     line-height: 3.125rem;
     width: 21.8125rem;
-    height: 5.8125rem;
+    height: auto;
     margin: 1.5625rem 1.375rem 1.0625rem;
 }
 
@@ -345,7 +345,7 @@ header {
     text-align: center;
     line-height: 2.25rem;
     width: 22.875rem;
-    height: 4.9375rem;
+    height: auto;
     margin: 1.6875rem 1.375rem 0.8125rem;
 }
 
@@ -385,12 +385,13 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .content__about-title {
     font-size: 30px;
     font-weight: 900;
     text-transform: uppercase;
     width: 20.185rem;
-    height: 4.5rem;
+    height: auto;
     text-align: center;
     line-height: 2.25rem;
     margin: 1.6875rem 1.5rem 1.25rem 0;
@@ -412,7 +413,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100dvw;
+    width: 100%;
     aspect-ratio: 1 / 1;
 }
 
@@ -546,7 +547,7 @@ header {
 }
 
 /*Desktop*/
-@media (min-width: 769px) {
+@media (min-width: 1640px) {
     .header {
         display: flex;
         padding: 0 5vw;
@@ -631,7 +632,6 @@ header {
         background-position: 50% 69%;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 22.625rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -643,14 +643,14 @@ header {
 
     .hero__title {
         width: 65.8125rem;
-        height: 3.6875rem;
+        height: auto;
         font-weight: 800;
         font-size: 48px;
         margin: 2.8125rem 0 0.5rem;
     }
 
     .hero__subtitle {
-        height: 1.5rem;
+        height: auto;
         width: 46.4375rem;
         font-weight: 500;
         font-size: 20px;
@@ -676,7 +676,7 @@ header {
     .content__recent-title {
         font-size: 36px;
         width: 31.375rem;
-        height: 4.5rem;
+        height: auto;
         text-align: center;
         margin-top: 1.875rem;
         display: flex;
@@ -764,7 +764,7 @@ header {
         margin-top: 1.5625rem;
         margin-bottom: 2.6875rem;
         font-size: 40px;
-        height: 2.9375rem;
+        height: auto;
     }
     .content__benefits-list {
         width: 100%;
@@ -774,7 +774,7 @@ header {
     .content__benefits-image {
         display: flex;
         width: 45.4375rem;
-        height: 29.5rem;
+        height: auto;
         object-fit: cover;
         margin-top: 4.75rem;
         margin-bottom: 5.8125rem;
@@ -824,7 +824,7 @@ header {
         grid-row: 1 / 3;
         grid-column: 1;
         width: 45.5625rem;
-        height: 30.4375rem;
+        height: auto;
         object-fit: contain;
         margin: 0;
         margin-left: 3.813rem;
@@ -835,18 +835,21 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 46.25rem;
+        height: auto;
     }
     .content__about-title {
         width: 100%;
         display: flex;
         align-items: center;
+        font-size: 40px;
+        margin: 0;
+        margin-bottom: 2.563rem;
     }
 
     .content__about-content {
         display: flex;
         width: 44.4375rem;
-        height: 740px;
+        height: auto;
         flex-direction: column;
         justify-content: center;
     }
@@ -860,7 +863,7 @@ header {
     .content__about-bloc {
         width: 50%;
         align-items: center;
-        height: -webkit-fill-available;
+        height: auto;
     }
 
     .content__about-image {
@@ -868,7 +871,7 @@ header {
     }
 
     .footer__contact {
-        height: 41.4375rem;
+        height: auto;
     }
 
     .footer__contact-head {
@@ -940,7 +943,7 @@ header {
         margin-top: 6.375rem;
         margin-left: 18rem;
         margin-right: 4.0625rem;
-        height: 8.4375rem;
+        height: auto;
     }
 
     .footer__legalties-title,
@@ -952,7 +955,7 @@ header {
         align-items: flex-start;
         text-align: left;
         margin-top: 6.375rem;
-        height: 9rem;
+        height: auto;
     }
 
     .footer__connexion {
@@ -993,7 +996,7 @@ header {
         display: flex;
         align-self: flex-start;
         width: 18.8125rem;
-        height: 1.5rem;
+        height: auto;
         margin-right: 54.375rem;
         margin-top: 1.5625rem;
     }
@@ -1006,7 +1009,7 @@ header {
         display: flex;
         align-self: flex-end;
         width: 19.75rem;
-        height: 1.875rem;
+        height: auto;
         margin-top: 2.375rem;
         padding-bottom: 7.9375rem;
         text-align: center;
