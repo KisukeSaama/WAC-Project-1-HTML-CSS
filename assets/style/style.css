@@ -795,7 +795,7 @@ header {
         text-align: left;
         font-size: 40px;
         margin: 0;
-        margin-top: 3.813rem;
+        margin-top: 4.938rem;
     }
 
     .content__create-label {
@@ -810,6 +810,14 @@ header {
         margin: 0;
         margin-bottom: 4.875rem;
         padding: 0;
+    }
+
+    .content__create-object {
+        margin-bottom: 0.938rem;
+    }
+
+    .content__create-object:last-child {
+        margin-bottom: 0;
     }
 
     .content__create-image {
