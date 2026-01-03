@@ -109,7 +109,7 @@ header {
             rgba(68, 221, 138, 0.8) 3.11%,
             rgba(21, 183, 226, 0.8) 98.45%
         ),
-        url(/assets/images/bg-header.jpg);
+        url(assets/images/bg-header.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
